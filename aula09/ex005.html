@@ -19,7 +19,8 @@
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
     <div>Clique em mim</div>
     <script>
-        window.document.write(window.document.URL)
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito: ' + p1.innerText)
     </script>
 </body>
 </html>
