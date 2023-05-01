@@ -17,11 +17,12 @@
     <h1>Iniciando estudos com DOM</h1>
     <P>Aqui vai o resultado</P>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
         var corpo = document.body
         var p1 = document.getElementsByTagName('p')[1]
-        alert(p1.innerText)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
     </script>
 </body>
 </html>
