@@ -19,7 +19,11 @@
         var res = document.querySelector('div#res')
         var country = (txtna.value)
         res.innerHTML = `Vivendo em ${country}`
-        
+        if (country == 'Brasil') {
+            res.innerHTML = 'Voce é brasileiro'
+        } else {
+            res.innerHTML = 'Você é estrangeiro!'
+        }
     }
    </script>
 </body>
