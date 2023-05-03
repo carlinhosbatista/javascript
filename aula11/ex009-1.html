@@ -8,14 +8,18 @@
 </head>
 <body>
    <h1>Nacionalidade</h1> 
-   País <input type="text" name="txtnac" id="txtnac">
+   País: <input type="text" name="txtnac" id="txtnac">
    <input type="button" value="Teste" onclick="nacionalidade()">
    <div id="res">
 
    </div>
    <script>
     function nacionalidade() {
-
+        var txtna = document.querySelector('input#txtnac')
+        var res = document.querySelector('div#res')
+        var country = (txtna.value)
+        res.innerHTML = `Vivendo em ${country}`
+        
     }
    </script>
 </body>
