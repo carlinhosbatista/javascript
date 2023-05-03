@@ -5,10 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>País de Origem</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        p.design {
+            text-align: center;
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 <body>
-   <h1>Nacionalidade</h1> 
-   País: <input type="text" name="txtnac" id="txtnac">
+   <h1>Nacionalidade</h1>
+   <p class="design">Teste de Nacionalidade</p> 
+   Qual é o seu país de origem? <input type="text" name="txtnac" id="txtnac">
    <input type="button" value="Teste" onclick="nacionalidade()">
    <div id="res">
 
@@ -18,7 +34,7 @@
         var txtna = document.querySelector('input#txtnac')
         var res = document.querySelector('div#res')
         var country = (txtna.value)
-        res.innerHTML = `<p>Vivendo em <strong>${country}</strong></p>`
+        res.innerHTML = `<p>Nascido no(em) <strong>${country}</strong></p>`
         if (country == 'Brasil') {
             res.innerHTML += '<p>Voce é <strong>brasileiro</strong></P>'
         } else {
