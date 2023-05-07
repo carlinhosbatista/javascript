@@ -17,6 +17,10 @@ function verificar() {
                 // Criança
             } else if (idade < 21) {
                 // Jovem
+            } else if (idade < 50) {
+                // Adulto
+            } else {
+                // Idoso
             }
         } else if (fsex[1].checked) {
             genero = 'Mulher'
