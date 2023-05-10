@@ -11,7 +11,7 @@ function contar() {
         var f = Number(fim.value)
         var p = Number(passo.value) 
         
-        for(let c = i; c <= f; c++ p)
+        for(let c = i; c <= f; c+= p)
     } 
 }
 
