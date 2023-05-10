@@ -11,10 +11,11 @@ function contar(){
         let i = Number(inicio.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
-
-        for(let c = i; c <= f; c += p) {
+        if (i < f){
+            for (let c = i; c <= f; c += p) {
             res.innerHTML += ` ${c} \u{1F449}`
+            }
+        res.innerHTML += `\u{1f3c1}`
         }
-        res.innerHTML += ``
     }
 }
