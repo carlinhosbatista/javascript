@@ -3,7 +3,7 @@ function contar() {
     let fim = document.getElementById('txtf')
     let passo = document.getElementById('txtp')
     let res = document.getElementById('res')
-    if (ini.value == 0 || fim.value == 0 || passo.value == 0) {
+    if (ini.value.lenght == 0 || fim.value.lenght == 0 || passo.value.lenght == 0) {
         alert('[ERRO] Faltam dados!')
     } else {
         res.innerHTML = 'Contando: <br>'
@@ -16,7 +16,7 @@ function contar() {
             }    
         } else {
             for(let c = i; c >= f; c -= p) {
-                res.innerHTML += `${c}`
+                res.innerHTML += ` ${c} \u{1f449}`
             }
         }
         res.innerHTML += `\u{1f3c1}`
