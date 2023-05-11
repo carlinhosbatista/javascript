@@ -8,18 +8,29 @@
     <link rel="stylesheet" href="estilo.style.css">
 </head>
 <body>
-    <div>
-        <p>
-            <label for="txti">Início: </label>
-            <input type="number" name="txti" id="txti">
-        </p>
-        <p>
-            <label for="txtf">Fim: </label>
-        </p>
-    </div>
-    <div id="res">
-
-    </div>
+    <section>
+        <div id="dados">
+            <p>
+                <label for="txti">Início: </label>
+                <input type="number" name="txti" id="txti">
+            </p>
+            <p>
+                <label for="txtf">Fim: </label>
+                <input type="number" name="txtf" id="txtf">
+            </p>
+            <p>
+                <label for="txtp">Passo: </label>
+                <input type="number" name="txtp" id="txtp">
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="contar()">
+            </p>
+        </div>
+        <div id="res">
+            Sua contagem começa aqui...
+        </div>    
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
