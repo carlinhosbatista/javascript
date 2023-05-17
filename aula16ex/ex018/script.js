@@ -22,7 +22,7 @@ function inLista (n, l) {
 
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)) { // Se o valor de num é um número e se o valor de (num, valores-array) não está na lista
-        alert('Tudo ok!')
+        valores.push(Number(num.value)) // Adicionar 'valores(índice).push -> adicionar um elemento no vetor, no caso o valor do número de num 
     } else {
         alert('Valor inválido ou já encontrado na lista.')
     }
