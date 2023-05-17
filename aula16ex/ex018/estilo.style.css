@@ -19,6 +19,23 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 
+select#flista {
+    display: block;
+    width: 150px;
+    margin-top: 10px;
+}
+
+input#select {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+input#fin {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
 footer {
     color: white;
     text-align: center;
