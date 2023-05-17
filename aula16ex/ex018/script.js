@@ -21,7 +21,7 @@ function inLista (n, l) {
 }
 
 function adicionar() {
-    if(isNumero(num.value) && !inLista(num.value, valores)) {
+    if(isNumero(num.value) && !inLista(num.value, valores)) { // Se o valor de num é um número e se o valor de (num, valores-array) não está na lista
         alert('Tudo ok!')
     } else {
         alert('Valor inválido ou já encontrado na lista.')
