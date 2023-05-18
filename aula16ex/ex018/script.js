@@ -2,7 +2,6 @@ let num = document.querySelector('input#fnum')
 let lista = document.querySelector('select#flista')
 let res = document.querySelector('div#res')
 let valores = []
-// VALORES GLOBAIS: QUANDO ESTÃO FORA DAS FUNÇÕES
 
 function isNumero(n) { // Descobrir se o número está entre 1 e 100
     if(Number(n) >= 1 && Number(n) <= 100) { // Se o número(n) for >= a 1 e <= a 100
@@ -30,7 +29,7 @@ function adicionar() {
     } else {
         alert('Valor inválido ou já encontrado na lista.')
     }
-    num.value= ''
+    num.value = ''
     num.focus()
 }
 
