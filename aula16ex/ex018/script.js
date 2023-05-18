@@ -41,15 +41,20 @@ function finalizar() {
         let tot = valores.length
         let maior = valores[0] // Descobrir o maior número no vetor
         let menor = valores[0] // Descobrir o menor número no vetor
+        let soma = 0
+        let media = 0
         for(let pos in valores) { // Pra cada posição em valores
+            soma += valores[pos]
             if (valores[pos] > maior) // Se valores[pos] for maior que o maior valor digitado
-                maior = valores[pos]
-            if (valores[pos] < menor)
-                menor = valores[pos]
+                maior = valores[pos] // maior recebe valores[pos]
+            if (valores[pos] < menor) // Se valores[pos] for menor que o menor valor digitado
+                menor = valores[pos] // menor recebe valore[pos]
         }
+        media = soma / tot
         res.innerHTML = ''
         res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`
-        res.innerHTML += `<p> maior valor informado foi ${maior}.</p>`
+        res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
         res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
+        res.innerHTML += `<p>Somando todos os valores, temos ${soma}`
     }
 }
