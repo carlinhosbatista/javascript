@@ -22,9 +22,10 @@ function inLista (n, l) {
 
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)) { // Se o valor de num é um número e se o valor de (num, valores-array) não está na lista
-         // Adicionar 'valores(índice).push -> adicionar um elemento no vetor, no caso o valor do Number(num.value). Verificar se o programa está funcionando corretamente
-        
-
+        valores.push(Number(num.value)) // Adicionar 'valores(índice).push -> adicionar um elemento no vetor, no caso o valor do Number(num.value). Verificar se o programa está funcionando corretamente
+        let item = document.createElement('option')
+        item.text = `O valor ${num.value} foi adicionado.`
+        lista.appendChild(item)
     } else {
         alert('Valor inválido ou já encontrado na lista.')
     }
