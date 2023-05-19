@@ -6,7 +6,7 @@ function tabuada() {
         alert('Por favor, digite um numero!')
     } else {
         let n = Number(num.value)
-        
+
         for(let c = n; c <= 10; c++) {
             let item = document.createElement('option')
             item.text = `${n} x ${c} = ${n*c}`
