@@ -6,5 +6,6 @@ function tabuada() {
         alert('Por favor, digite um número!')
     } else {
         let n = Number(num.value)
+        let item = document.createe
     }
 }
