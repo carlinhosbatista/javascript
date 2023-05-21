@@ -21,7 +21,7 @@ function inLista (n, l) {
 
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)) { // Se o valor de num é um número e se o valor de (num, valores-array) não está na lista
-        valores.push(Number(num.value)) // Adicionar 'valores(índice).push -> adicionar um elemento no vetor, no caso o valor do Number(num.value). Verificar se o programa está funcionando corretamente
+        valores.push(Number(num.value)) // Valores.push -> adicionar um elemento no vetor, no caso o valor do Number(num.value).
         let item = document.createElement('option')
         item.text = `Valor ${num.value} adicionado.`
         lista.appendChild(item)
@@ -45,9 +45,9 @@ function finalizar() {
         for(let pos in valores) { // Pra cada posição em valores
             soma += valores[pos]
             if (valores[pos] > maior) // Se valores[pos] for maior que o maior valor digitado
-                maior = valores[pos] // maior recebe valores[pos]
+                maior = valores[pos] // maior recebe o MAIOR valor da posição de valores
             if (valores[pos] < menor) // Se valores[pos] for menor que o menor valor digitado
-                menor = valores[pos] // menor recebe valore[pos]
+                menor = valores[pos] // menor recebe o MENOR valor da posição valores
         }
         media = soma / tot
         res.innerHTML = ''
