@@ -5,7 +5,8 @@ function contar() {
     let res = document.querySelector('div#res')
 
     if (ini.value == 0 || fim.value == 0 || passo.value.lenght == 0) {
-        alert('[ERRO] Informe o camp solicitado!')
+        res.innerHTML = 'Impossível contar!'
+        //alert('[ERRO] Informe o camp solicitado!')
     } else {
         let i = Number(ini.value)
         let f = Number(fim.value)
@@ -18,6 +19,10 @@ function contar() {
         if (i < f) {
             for(c = i; c <= f; c += p) {
                 res.innerHTML += ` ${c} \u{1f449} `
+            }
+        } else {
+            for(c = i; c >= f; c -= p) {
+                res.innerHTML += ` ${c} \u{1f449}`
             }
         }
     }
