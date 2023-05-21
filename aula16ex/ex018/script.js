@@ -47,14 +47,14 @@ function finalizar() {
             if (valores[pos] > maior) // Se valores[pos] for maior que o maior valor digitado
                 maior = valores[pos] // maior recebe o MAIOR valor da posição de valores
             if (valores[pos] < menor) // Se valores[pos] for menor que o menor valor digitado
-                menor = valores[pos] // menor recebe o MENOR valor da posição valores
+                menor = valores[pos] // menor recebe o MENOR valor da posição de valores
         }
         media = soma / tot
         res.innerHTML = ''
         res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`
         res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
         res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
-        res.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`
-        res.innerHTML += `<p>A média dos valores digitados é ${media}.</p>`
+        res.innerHTML += `<p>Somando todos os valores, temos ${soma}`
+        res.innerHTML += `<p>A média dos valores digitados é ${media}`
     }
 }
