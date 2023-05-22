@@ -5,9 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio boas-vndas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button {
+            font-size: 1.2em;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: brown;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <h1>Boas-vindas</h1>
-    <button>Inicie o desafio</button>
+    <button onclick="inicio()">Inicie o desafio</button>
+    <script>
+        function inicio() {
+            let nome = prompt('Qual é o seu nome?')
+            let idade = prompt(`Olá, ${nome}! Quantos anos você tem?`)
+            alert(`Acabei de conhecer ${nome}, que tem ${idade} anos de idade!`)
+        }
+    </script>
 </body>
 </html>
