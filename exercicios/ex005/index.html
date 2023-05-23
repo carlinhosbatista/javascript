@@ -27,7 +27,7 @@
     <script>
         alert('Seja bem-vindo(a) ao meu site!')
         function calcular() {
-            let n = prompt('Digite um número:')
+            let n = Number(prompt('Digite um número:'))
             let res = document.getElementById('res')
             res.innerHTML = `<p>O dobro de ${n} é ${n*2} e a metade é ${n/2}`
             
