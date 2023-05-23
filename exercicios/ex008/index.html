@@ -27,13 +27,16 @@
         function calcular() {
             let n = Number(prompt('Digite um número:'))
             let abs = Math.abs(n)
+            
             let res = document.querySelector('section#res')
 
             res.innerHTML = `<p>O número a ser analisado aqui será o ${n}.</p>`
             res.innerHTML += '<p>_____________________________________________________________________</p>'
             res.innerHTML += `<p>O seu valor absoluto é ${abs}.</p>`
             res.innerHTML += `<p>A parte inteira é ${parseInt(n)}.</p>`
-            
+            res.innerHTML += `<p>O valor inteiro mais próximo é ${Math.round(n)}.</p>`
+            res.innerHTML += `<p>A sua raiz quadrada é ${Math.sqrt(n)}.</p>`
+            res.innerHTML += `A sua raíz cúbica é ${Math.cbrt(n)}.`
         }
     </script>
 </body>
