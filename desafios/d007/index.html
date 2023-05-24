@@ -19,9 +19,19 @@
 </head>
 <body>
    <h1>Conversor R$ &rarr; US$</h1> 
-   <button>Converter</button>
-   <section>
+   <button onclick="convert()">Converter</button>
+   <section id="res">
     <p>Clique no botão acima para iniciar.</p>
    </section>
+
+   <script>
+        let cot = prompt('Antes de mais nada. Quanto está a cotação do dolár agora?')
+        function convert() {
+            let real = prompt('Quantos R$ você tem na carteira?')
+            let rdolar = real/cot
+            let res = document.querySelector('section#res')
+            res.innerHTML = `Com ${real} que você tem e a cotação de hoje, você vai conseguir comprar ${rdolar.toLocaleString('pt-BR', { style: 'currency', currency: 'US' })}`
+    }
+   </script>
 </body>
 </html>
