@@ -30,7 +30,7 @@
             let real = prompt('Quantos R$ você tem na carteira?')
             let rdolar = real/cot
             let res = document.querySelector('section#res')
-            res.innerHTML = `Com ${real} que você tem e a cotação de hoje, você vai conseguir comprar ${rdolar.toLocaleString('pt-BR', { style: 'currency', currency: 'US' })}`
+            res.innerHTML = `Com R$${real} que você tem e a cotação de hoje, você vai conseguir comprar ${rdolar.toLocaleString('en-US', {style: 'currency', currency: 'USD'})}.`
     }
    </script>
 </body>
