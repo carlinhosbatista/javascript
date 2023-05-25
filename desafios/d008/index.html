@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Desconto</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+
+        button {
+            font-size: 1em;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calcular Desconto</h1>
+    <button onclick="desc()">Desconto de 10%</button>
+
+    <section id="res">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+
+    <script>
+        function desc() {
+            let prod = prompt('Qual é o produto que você está comprando?')
+            let val = prompt(`Qual é o preço de ${prod}?`)
+            let price = parseFloat(val).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+            let dis = parseFloat(val*10)/100
+            let tot = val - dis
+            let res = document.querySelector('section#res')
+            res.innerHTML = `<p><strong>Calculando o desconto de 10% para ${prod}.</strong></p>`
+            res.innerHTML += `<p>O preço original era ${price.toString().replace(".", ",")}.</p>`
+            res.innerHTML += `<p>Você acaba de ganhar ${dis.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} de desconto (-10%).</p>`
+            res.innerHTML += `No fim, você vai pagar ${tot.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} no produto ${prod}.`
+        }
+    </script>
+</body>
+</html>
