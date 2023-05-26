@@ -24,15 +24,6 @@
     <p>Clique no botão acima para iniciar.</p>
    </section>
 
-   <script>
-        let cot = prompt('Antes de mais nada. Quanto está a cotação do dolár agora?')
-        function convert() {
-            let real = prompt('Quantos R$ você tem na carteira?')
-            let reais = parseFloat(real).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-            let rdolar = real/cot
-            let res = document.querySelector('section#res')
-            res.innerHTML = `Com ${reais} que você tem e a cotação de hoje, você vai conseguir comprar ${rdolar.toLocaleString('en-US', {style: 'currency', currency: 'USD'})}.`
-    }
-   </script>
+   <script src="script.js"></script>
 </body>
 </html>
