@@ -24,21 +24,6 @@
         <p>Clique no botão acima para iniciar.</p>
     </section>
 
-    <script>
-        function reajuste() {
-            let nome = prompt('Qual é o nome do funcionário?')
-            let sal = prompt(`Qual é o salário de ${nome}`) 
-            let salAtual = parseFloat(sal).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-            let porc = prompt(`O salário de ${nome} vai ser reajustado em qual porcentagem?`)
-            let aumento = sal*porc/100
-            let nSal = parseFloat(sal) + parseFloat(aumento)  
-            let res = document.querySelector('section#res')
-
-            res.innerHTML = `<p><strong>${nome} recebeu um aumento salarial!</strong></p>`
-            res.innerHTML += `<p>O salário atual era ${salAtual}.</p>`
-            res.innerHTML += `<p>Com um aumento de ${porc}%, o salário vai aumentar ${aumento.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} no próximo mês.</p>`
-            res.innerHTML += `E a partir daí, ${nome} vai passar a ganhar ${nSal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}.`
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
