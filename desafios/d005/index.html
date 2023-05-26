@@ -25,25 +25,6 @@
         <p>Clique no botão acima para iniciar.</p>
     </section>
 
-    <script>
-        function converter() {
-            let metros = prompt('Digite uma distância em metros (m)')
-            let km = parseInt(metros)/1000
-            let hec = metros/100
-            let dec = metros/10
-            let deci = metros*10
-            let cen = metros*100
-            let mil = metros*1000
-
-            let res = document.querySelector('section#res')
-            res.innerHTML = `<p><strong>A distância de ${metros.toString().replace(".", ",")} metros, corresponde a...</strong></p>`
-            res.innerHTML += `<p>${km.toString().replace(".", ",")} quilômetros (Km)</p>`
-            res.innerHTML += `<p>${hec.toFixed(3).toString().replace(".", ",")} hectômetros (Hm)</p>`
-            res.innerHTML += `<p>${dec.toString().replace(".", ",")} decâmetros (Dam)</p>`
-            res.innerHTML += `<p>${deci.toLocaleString()} decímetros (dm)</p>`
-            res.innerHTML += `<p>${cen.toLocaleString()} centímetros (cm)</p>`
-            res.innerHTML += `<p>${mil.toLocaleString()} milímetros (mm)</p>`
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
