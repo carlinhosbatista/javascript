@@ -21,8 +21,19 @@
     <h1>Resolvendo Bhaskara</h1>
     <button onclick="calc()">Calcular</button>
 
-    <section>
-        <p>Considerando uma equação no formato <strong>ax&#178; + </stron><strong>bx + c = <em>0</em></strong></p>
+    <section id="res">
+        <p>Considerando uma equação no formato <strong>ax</strong><em>&#178;</em> <strong>+ bx + c =</strong> <em>0</em>, aperte o botão acima para calcular o valor de &Delta;.</p>
     </section>
+
+    <script>
+        function calc() {
+            let a = parseFloat(prompt('Qual é o valor de a?')) 
+            let b = parseFloat(prompt('Qual é o valor de b?')) 
+            let c = parseFloat(prompt('Qual é o valor de c?')) 
+            let res = document.querySelector('section#res')
+            
+            res.innerHTML = 'Resolvendo Bhaskara'
+        }
+    </script>
 </body>
 </html>
