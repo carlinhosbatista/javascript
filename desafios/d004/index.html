@@ -24,10 +24,11 @@
         function calc(){
             let prod = prompt('Que produto você está comprando?')
             let val = Number(prompt(`Quanto custa ${prod} que você está comprando?`))
-            var c = val.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+            let c = val.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
             let din = Number(prompt(`Quanto foi o valor que você deu para pagar ${prod}?`))
-            var pag = din.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-            alert(`Você comprou ${prod}, que custou ${c}. \n Deu ${pag} em dinheiro e vai receber R$ ${din-val},00 de troco. \n Volte Sempre!`)
+            let pag = din.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+            let troco = din - val
+            alert(`Você comprou ${prod}, que custou ${c}. \n Deu ${pag} em dinheiro e vai receber ${troco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} de troco. \n Volte Sempre!`)
         }
     </script>
 </body>
