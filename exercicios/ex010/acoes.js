@@ -1,11 +1,11 @@
 let res = document.getElementById('saida')
 
 function acao1() {
-    res.innerHTML = '<p>Clicou no primeiro botão</p>'
+    res.innerHTML += '<p>Clicou no primeiro botão</p>'
 }
 
 function acao2() {
-    res.innerHTML += '<p>Clicou no segundoo botão</p>'
+    res.innerHTML += '<p>Clicou no segundo botão</p>'
 }
 
 function acao3() {
