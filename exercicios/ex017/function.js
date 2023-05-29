@@ -1,11 +1,18 @@
+let gen = document.querySelector('section#gen')
+
 function generate() {
     let num = Math.floor(100* Math.random())
-    let gen = document.querySelector('section#gen')
-    gerar.innerHTML += `<p>Acabei de pensar no número <mark>${num}!</mark></p>`
+    if (num.value != ''){
+        gen.innerHTML += `<p>Acabei de pensar no número <mark>${num}</mark>!</p>`
+    } else {
+        gerar.innerHTML = ''
+    }
+    
 
+    
 }
 
-function clear() {
-    let clear = document.querySelector('button#clear')
-    clear.innerHTML = ''
+
+function clear(){
+   
 }
