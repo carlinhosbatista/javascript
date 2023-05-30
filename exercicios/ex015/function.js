@@ -6,10 +6,12 @@ function dateH() {
     let month = now.getMonth()
     let year = now.getFullYear()
     let dayW = now.getDay()
+    let hour = now.getHours()
 
     let exit = document.querySelector('section#exit')
     exit.innerHTML = `<p>Dia: <mark>${day}</mark></p>`
     exit.innerHTML += `<p>Mês: <mark>${months[month]}</mark></p>`
     exit.innerHTML += `<p>Ano: <mark>${year}</mark></p>`
     exit.innerHTML += `<p>Dia da semana: <mark>${week[dayW]}</mark></p>`
+    exit.innerHTML += `<p>Hora: <mark>${hour}</mark></p>`
 }
