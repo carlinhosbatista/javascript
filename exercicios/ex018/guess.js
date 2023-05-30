@@ -1,5 +1,5 @@
 let res = document.querySelector('section#result')
-let comp = 0 
+let comp = 0
 let player = 0
 
 function rand() {
