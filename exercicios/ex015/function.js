@@ -8,6 +8,7 @@ function dateH() {
     let dayW = now.getDay()
     let hour = now.getHours()
     let min = now.getMinutes()
+    let sec = now.getSeconds()
 
     let exit = document.querySelector('section#exit')
     exit.innerHTML = `<p>Dia: <mark>${day}</mark></p>`
@@ -16,4 +17,5 @@ function dateH() {
     exit.innerHTML += `<p>Dia da semana: <mark>${week[dayW]}</mark></p>`
     exit.innerHTML += `<p>Hora: <mark>${hour}</mark></p>`
     exit.innerHTML += `<p>Minutos: <mark>${min}</mark></p>`
+    exit.innerHTML += `<p>Segundos: <mark>${sec}</mark></p>`
 }
