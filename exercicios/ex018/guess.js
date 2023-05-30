@@ -1,4 +1,4 @@
-let aut = Math.floor(Math.random() * 100 +1)
+let aut = Math.floor(Math.random() * 100 + 1)
 
 function guess() {
     let num = Number(prompt('Qual é o seu palpite?'))
