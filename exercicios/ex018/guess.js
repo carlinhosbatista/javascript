@@ -1,5 +1,6 @@
+let aut = Math.floor(Math.random() * 100 +1)
+
 function guess() {
-    let aut = Math.floor(Math.random() * 10 +1)
     let num = Number(prompt('Qual é o seu palpite?'))
     let guess = document.querySelector('section#guess')
     if (num == aut) {
