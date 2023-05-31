@@ -16,7 +16,7 @@ function calc() {
             exit.innerHTML += `<p>${n1} x ${n2} = <strong>${n1*n2}</strong></p>`
             break
         case 4:
-            exit.innerHTML += `<p>${n1} / ${n2} = <strong>${n1/n2}</strong></p>`
+            exit.innerHTML += `<p>${n1} / ${n2} = <strong>${(n1/n2).toLocaleString('pt-BR')}</strong></p>`
             break
         default:
             exit.innerHTML += `<p>OPÇÃO INVÁLIDA! Você digitou ${n1} e ${n2}, mas não sei o que fazer com eles</p>.`
