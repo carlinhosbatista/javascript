@@ -13,6 +13,11 @@ function rand() {
 function shot() {
     player = Number(prompt('Qual a sua tentativa?'))
     if (player > comp) {
-        res.innerHTML += `Você falou ${player}. Mu númer é MENOR!`
+        res.innerHTML += `<p>Você falou ${player}. Meu número é <strong>MENOR!</strong></p>`
+    } else if (player < comp) {
+        res.innerHTML += `<p>Você falou ${player}. Meu númenor é <strong>MAIOR!</strong></p>`
+    } else {
+        res.innerHTML += `<p><strong>PARABÉNS!</strong> Você acertou! Eu tinha sorteado o valor ${comp}!</p>`
+        let bt = document.querySelector('button#bt').style.visibility = 'hidden'
     }
 }
