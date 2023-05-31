@@ -7,11 +7,19 @@ function calc() {
     exit.innerHTML = '<h2>Calculando...</h2>'
     switch (op) {
         case 1:
-            exit.innerHTML += `${n1} + ${n2} = ${n1+n2}`
-            break;
-    
+            exit.innerHTML += `<p>${n1} + ${n2} = <strong>${n1+n2}</strong></p>`
+            break
+        case 2:
+            exit.innerHTML += `<p>${n1} - ${n2} = <strong>${n1-n2}</strong></p>`
+            break
+        case 3:
+            exit.innerHTML += `<p>${n1} x ${n2} = <strong>${n1*n2}</strong></p>`
+            break
+        case 4:
+            exit.innerHTML += `<p>${n1} / ${n2} = <strong>${n1/n2}</strong></p>`
+            break
         default:
-            exit.innerHTML += `OPÇÃO INVÁLIDA! Você digitou ${n1} e ${n2}, mas não sei o que fazer com eles.`
-            break;
+            exit.innerHTML += `<p>OPÇÃO INVÁLIDA! Você digitou ${n1} e ${n2}, mas não sei o que fazer com eles</p>.`
+            break
     }
 }
