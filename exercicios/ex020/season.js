@@ -3,7 +3,7 @@ function season() {
     let exit = document.getElementById('exit')
     let season
 
-    switch (month) {
+    switch (month.toUpperCase()) {
         case 'JANEIRO': case 'FEVEREIRO': case 'MARÇO':
             season = 'INVERNO'
             break
@@ -20,5 +20,5 @@ function season() {
             season = 'INDEFINIDO'
             break
     }
-    exit.innerHTML = `no mês de ${month}, estamos na estação ${season}`
+    exit.innerHTML = `<p>No mês de <mark>${month}</mark>, estamos na estação <strong><mark>${season}</mark></strong></p>`
 }
