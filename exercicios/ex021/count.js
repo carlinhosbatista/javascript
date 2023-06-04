@@ -1,8 +1,9 @@
 function count() {
-    let exit = document.getElementById('exit')
-    for(let c = 1; c <= 10; c++) {
-        exit.innerHTML += 'Contando de 1 até 10'
-        document.body.style.fontSize = '2em'
+    let exit = document.querySelector('section#exit')
+    exit.innerHTML += '<p><h2>Contando de 1 até 10</h2></p>'
+    for(c = 1; c <= 10; c++) {
+        exit.innerHTML += ` ${c} \u{1f449}`
     }
-    exit.innerHTML += `${c}`
+    exit.innerHTML += `\u{1f3c1}`
+   
 }
