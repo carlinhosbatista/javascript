@@ -1,9 +1,9 @@
 function count() {
-    let exit = document.getElementById('exit')
-    let c = 1
-    exit.innerHTML += '<h2>Contando de 1 até 10</h2>'
-    while (c <= 10) {
-            exit.innerHTML += ` ${c} \u{1f449}`
-        c++
+    let exit = document.querySelector('section#exit')
+    exit.innerHTML += '<p><h2>Contando de 1 até 10</h2></p>'
+    for(c = 1; c <= 10; c++) {
+        exit.innerHTML += ` ${c} \u{1f449}`
     }
+    exit.innerHTML += `\u{1f3c1}`
+   
 }
