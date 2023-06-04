@@ -1,5 +1,5 @@
 function season() {
-    let season = prompt('Digite o mês em extenso (ex: Setembro')
+    let month = prompt('Digite o mês em extenso (ex: Setembro')
     let exit = document.querySelector('section#exit')
     switch (season.toUpperCase()) {
         case 'JANEIRO': case 'FEVEREIRO': case 'MARÇO':
@@ -18,4 +18,5 @@ function season() {
             season = 'INDEFINIDA'
             break;
     }
+    exit.innerHTML = `No mês de ${month}, estamos na estção ${season}`
 }
