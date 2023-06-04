@@ -13,10 +13,12 @@ function season() {
         case 'JULHO': case 'AGOSTO': case 'SETEMBRO':
             season = 'VERÃO'
             break
-        case 'OUTUBRO': case 'NOVEMBRO': case 'DEZEMBREO':
+        case 'OUTUBRO': case 'NOVEMBRO': case 'DEZEMBRO':
             season = 'OUTONO'
             break
         default:
+            season = 'INDEFINIDO'
             break;
     }
+    exit.innerHTML = `<p>No mês ${month}, estamos na estação ${season}</p>`
 }
