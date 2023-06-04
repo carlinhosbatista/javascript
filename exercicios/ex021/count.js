@@ -1,6 +1,5 @@
 function count() {
-    let exit = document.getElementById('exit').style.fontSize = '16px'
-    let dest = document.getElementsByClassName('destaque')
+    let exit = document.getElementById('exit')
     let c = 1
     exit.innerHTML += '<h2>Contando de 1 até 10</h2>'
     while (c <= 10) {
