@@ -11,4 +11,5 @@ function count() {
             c++
         }
     }
+    exit.innerHTML += ` \u{1f3c1}`
 }
