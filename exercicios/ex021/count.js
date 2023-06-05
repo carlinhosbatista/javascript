@@ -4,6 +4,6 @@ function count() {
     for(c = 1; c <= 10; c++) {
         exit.innerHTML += ` ${c} \u{1f449}`
     }
-    exit.innerHTML += `\u{1f3c1}`
+    exit.innerHTML += ` \u{1f3c1}`
    
 }
