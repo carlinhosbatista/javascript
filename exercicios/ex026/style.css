@@ -27,7 +27,7 @@ input[type=submit] {
     font-size: 1em;
     background-color: green;
     color: white;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
 }
 
