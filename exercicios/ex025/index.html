@@ -11,9 +11,11 @@
     <h1>Contando de 0 até um número positivo qualquer</h1>
     <p>Escolha o limite final para a contagem a partir do 0 (digite apenas números positivos)</p>
 
-    <label for="num">Valor final:</label>
-    <input type="number" name="count" id="num" placeholder="Apenas positivos">
-    <button onclick="count()">Contar</button>
+    <form action="#" method="get">
+        <label for="num">Valor final:</label>
+        <input type="number" name="count" id="num" placeholder="Apenas positivos">
+        <input type="submit" value="Contar" formaction="javascript: count()">  
+    </form>  
 
     <section>
         <p id="exit">Preencha os dados acima e aperte o botão</p>
