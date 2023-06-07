@@ -5,7 +5,7 @@ function fatorial() {
     let fat = 1
     for (let c = n; c > 1; c--) {
         exit.innerHTML += `${c} x `
-        fat * c
+        fat *= c
     }
-    exit.innerHTML += `1 = ${fat}`
+    exit.innerHTML += `1 = <strong>${fat}</strong>`
 }
