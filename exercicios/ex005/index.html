@@ -8,22 +8,31 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
 
         button {
             font-size: 1em;
-            padding: 30px;
+            padding: 50px;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
     <h1>Trabalhando com números</h1>
-    <button onclick="click()">Clique para calcular</button>
+    <button onclick="clicked()">Clique para calcular</button>
 
     <section id="res">
         <p>O resultado vem aqui...</p>
     </section>
+
+    <script>
+        alert('Seja bem-vindo ao meu site!')
+        let res = document.getElementById('res')
+        function clicked() {
+            let n = Number(prompt('Digite um número:')) 
+            res.innerHTML = `<p>O dobro de ${n} é ${n*2} e a metade é ${n/2}!</p>`
+        }
+    </script>
 </body>
 </html>
