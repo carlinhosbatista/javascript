@@ -8,12 +8,12 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 1em;
+            font-size: 1.5em;
         }
 
         button {
-            font-size: 1.3em;
-            padding: 30px;
+            font-size: 1em;
+            padding: 50px;
         }
     </style>
 </head>
@@ -22,7 +22,21 @@
     <button onclick="clicked()">Calcular média</button>
 
     <section id="exit">
-        <p>P resultado vai aparecer aqui...</p>
+        <p>O resultado vai aparecer aqui...</p>
     </section>
+
+    <script>
+        function clicked() {
+            let nome = prompt('Qual é o nome do aluno?')
+            let nota1 = Number(prompt(`Qual foi a primeira nota de ${nome}?`))
+            let nota2 = Number(prompt(`Além de ${nota1}, qual foi a outra nota de ${nome}?`))
+            let res = document.getElementById('exit')
+            let media = (nota1 + nota2)/2
+
+            res.innerHTML = `<p>Calculando a média final de <mark>${nome}</mark>.</p>`
+            res.innerHTML += `<p>As notas obtidas foram ${nota1} e <mark>${nota2}</mark>.</p>`
+            res.innerHTML += `<p>A média final será <mark>${media}</mark>.</p>`
+        }
+    </script>
 </body>
 </html>
