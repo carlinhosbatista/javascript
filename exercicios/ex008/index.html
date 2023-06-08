@@ -21,13 +21,16 @@
     <h1>Vários cálculos em JS</h1>
     <button onclick="clicked()">Clique para calcular</button>
 
-    <section>
+    <section id="exit">
         <p>O resultado vai aparecer aqui...</p>
     </section>
 
     <script>
         function clicked() {
+            let n = Number(prompt('Digite um número:'))
+            let res = document.querySelector('section#exit')
 
+            res.innerHTML = `<p>O número a ser analisado aqui será o <strong>${n}</strong>.</p>`
         }
     </script>
 </body>
