@@ -8,34 +8,26 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
 
         button {
             font-size: 1em;
-            padding: 30px;
+            padding: 50px;
         }
     </style>
 </head>
 <body>
     <h1>Vários cálculos em JS</h1>
-    <button onclick="calcular()">Clique para calcular</button>
-    <section id="res">
-        <p>O resultado vai aparecer aqui...</p>        
-    </section>
-    <script>
-        function calcular() {
-            let n = Number(prompt('Digite um número:'))
-            let res = document.querySelector('section#res')
+    <button onclick="clicked()">Clique para calcular</button>
 
-            res.innerHTML = `<p>O número a ser analisado aqui será o <strong>${n}</strong>.</p><hr>`
-            res.innerHTML += `<p>O seu valor absoluto é ${Math.abs(n)}.</p>`
-            res.innerHTML += `<p>A sua parte inteira é ${parseInt(n)}.</p>`
-            res.innerHTML += `<p>O valor inteiro mais próximo é ${Math.round(n)}.</p>`
-            res.innerHTML += `<p>A sua raiz quadrada é ${Math.sqrt(n)}.</p>`
-            res.innerHTML += `<p>A sua raíz cúbica é ${Math.cbrt(n)}.</p>`
-            res.innerHTML += `<p>O valor de ${n}<sup>2</sup> é ${Math.pow(n, 2)}.</p>`
-            res.innerHTML += `O valor de ${n}<sup>3</sup> é ${Math.pow(n, 3)}`
+    <section>
+        <p>O resultado vai aparecer aqui...</p>
+    </section>
+
+    <script>
+        function clicked() {
+
         }
     </script>
 </body>
