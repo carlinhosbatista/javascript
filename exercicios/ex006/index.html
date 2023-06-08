@@ -8,29 +8,27 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.3em;
+            font-size: 1.5em;
         }
 
         button {
             font-size: 1em;
-            padding: 30px;
+            padding: 50px;
         }
     </style>
 </head>
 <body>
     <h1>Somando dois números</h1>
-    <button onclick="soma()">Iniciar soma</button>
-    <section id="res">
+    <button onclick="click()">Iniciar a soma</button>
+
+    <section>
         <p>O resultado vem aqui...</p>
     </section>
 
     <script>
-        function soma() {
-            let n1 = Number(prompt('Digite um número:'))
-            let n2 = Number(prompt('Digite outro número:'))
-            let soma = n1 + n2
-            let res = document.querySelector('section#res')
-            res.innerHTML = `<p>A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${soma}</strong></p>`
+        function click() {
+            let n1 = Number(prompt('/digite um número:'))
+            let n2 = Number(prompt('Digite outro núemro:'))
         }
     </script>
 </body>
