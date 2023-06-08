@@ -19,16 +19,19 @@
 </head>
 <body>
     <h1>Somando dois números</h1>
-    <button onclick="click()">Iniciar a soma</button>
+    <button onclick="clicked()">Iniciar a soma</button>
 
-    <section>
+    <section id="res">
         <p>O resultado vem aqui...</p>
     </section>
 
     <script>
-        function click() {
-            let n1 = Number(prompt('/digite um número:'))
-            let n2 = Number(prompt('Digite outro núemro:'))
+        function clicked() {
+            let n1 = Number(prompt('Digite um númenro:'))         
+            let n2 = Number(prompt('Digite outro número:'))
+            let res = document.querySelector('section#res')
+            let soma = n1 + n2
+            res.innerHTML = `<p>A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${soma}</strong>!</p>`
         }
     </script>
 </body>
