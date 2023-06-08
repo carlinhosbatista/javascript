@@ -20,18 +20,10 @@
 </head>
 <body>
     <h1>Trabalhando com números</h1>
-    <button onclick="calcular()">Clique para calcular</button>
+    <button onclick="click()">Clique para calcular</button>
+
     <section id="res">
         <p>O resultado vem aqui...</p>
     </section>
-    <script>
-        alert('Seja bem-vindo(a) ao meu site!')
-        function calcular() {
-            let n = Number(prompt('Digite um número:'))
-            let res = document.getElementById('res')
-            res.innerHTML = `<p>O dobro de ${n} é ${n*2} e a metade é ${n/2}`
-            
-        }
-    </script>
 </body>
 </html>
