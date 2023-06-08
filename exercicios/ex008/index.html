@@ -33,8 +33,10 @@
             res.innerHTML = `<p>O número a ser analisado aqui será o <strong>${n}</strong>.</p>`
             res.innerHTML += '<hr>'
             res.innerHTML += `<p>O seu valor absoluto é ${Math.abs(n)}.</p>`
-            res.innerHTML += `<p>A sua parte inteira é ${n}</p>`
-            res.innerHTML += `<p>O valor inteiro mais próximo é ${Math.round(n)}</p>`
+            res.innerHTML += `<p>A sua parte inteira é ${parseInt(n)}.</p>`
+            res.innerHTML += `<p>O valor inteiro mais próximo é ${Math.round(n)}.</p>`
+            res.innerHTML += `<p>A sua raiz quadrada é ${Math.sqrt(n)}.</p>`
+            res.innerHTML += `<p>A sua raiz cúbica é ${Math.cbrt(n)}.</p>`
         }
     </script>
 </body>
