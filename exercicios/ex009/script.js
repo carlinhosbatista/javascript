@@ -7,5 +7,6 @@ function clicou() {
 }
 
 function finalizar() {
-
+        c = 0
+        res.innerHTML = null
 }
