@@ -7,6 +7,6 @@ function test() {
         tipo = 'ÍMPAR'
     }
 
-    let res = document.querySelector('section#res')
+    let res = document.querySelector('section#exit')
     res.innerHTML = `<p>O número ${n} que foi digitado é <strong font-size: 1.3em;>${tipo}!</strong></p>`
 }
