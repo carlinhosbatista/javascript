@@ -10,6 +10,6 @@ function calc() {
     if(media < 6) {
         res.innerHTML += `A mensagem que temos é: Estude um pouco mais!`
     } else {
-        res.innerHTML += ``
+        res.innerHTML += `<p>A mensagem que temos é: Meus parabéns!</p>`
     }
 }
