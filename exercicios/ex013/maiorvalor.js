@@ -4,10 +4,10 @@ function val() {
 
     let res = document.querySelector('section#exit')
     if (n1 > n2) {
-        res.innerHTML = `Analisando os valores ${n1} e ${n2}, o maior valor é ${n1}`
+        res.innerHTML = `<p>Analisando os valores <mark>${n1}</mark> e <mark>${n2}</mark>, o maior valor é <strong>${n1}</strong>.</p>`
     } else if (n1 < n2) {
-        res.innerHTML = `Analisando os valores ${n1} e ${n2}, o maior valor é ${n2}`
+        res.innerHTML = `<p>Analisando os valores <mark>${n1}</mark> e <mark>${n2}</mark>, o maior valor é <strong>${n2}</strong>.</p>`
     } else {
-        res.innerHTML = `<p>Analisando os valores ${n1} e ${n2}, ambos são <strong>IGUAIS</strong></p>`
+        res.innerHTML = `<p>Analisando os valores <mark>${n1}</mark> e <mark>${n2}</mark>, ambos são <strong>IGUAIS</strong>.</p>`
     }
 }
