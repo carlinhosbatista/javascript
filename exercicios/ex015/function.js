@@ -6,10 +6,14 @@ function sistem() {
     let month = now.getMonth()
     let year = now.getFullYear()
     let day = now.getDay()
+    let hour = now.getHours()
+    let min = now. getMinutes()
 
     let exit = document.querySelector('section#exit')
     exit.innerHTML += `<p>Dia: <mark>${date}</mark></p>`
     exit.innerHTML += `<p>Mês: <mark>${months[month]}</mark></p>`
     exit.innerHTML += `<p>Ano: <mark>${year}</mark></p>`
     exit.innerHTML += `<p>Dia da semana: <mark>${week[day]}</mark></p>`
+    exit.innerHTML += `<p>Hora: <mark>${hour}</mark></p>`
+    exit.innerHTML += `<p>Minutos: <mark>${min}</mark></p>`
 }
