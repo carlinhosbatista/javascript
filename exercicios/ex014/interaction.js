@@ -1,9 +1,6 @@
-let bt = document.querySelector('button#bt') // Button
+function sis() {
+    let now = new Date()
 
-bt.addEventListener('click', interact)
-
-function interact() {
-    let date = new Date
-    let int = document.querySelector('section#int') // Interagir
-    int.innerHTML = `<p>O que eu recebi do sistema foi <mark>${date}</mark></p>`
+    let exit = document.querySelector('section#exit')
+    exit.innerHTML = `<p>O que recebi do sistema foi <mark>${now}</mark></p>`
 }
