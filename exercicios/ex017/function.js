@@ -1,10 +1,10 @@
-let exit = document.querySelector('section#exit')
+let res = document.querySelector('section#res')
 
 function generate() {
-    let random = Math.floor(Math.random() * 100) 
-    exit.innerHTML += `<p>Acabei de pensar no número <mark>${random}</mark>!</p>`
+    let num = Math.floor(100* Math.random())
+    res.innerHTML += `<p>Acabei de pensar no número <mark>${num}</mark>!</p>`
 }
 
 function cleanse() {
-    exit.innerHTML = ''
+    res.innerHTML = ''
 }
