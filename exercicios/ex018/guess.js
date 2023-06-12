@@ -1,3 +1,4 @@
+/*
 let comp = Math.floor(Math.random() * 100 + 1)
 
 function guess() {
@@ -13,3 +14,12 @@ function guess() {
         let bt = document.getElementById('bt').style.visibility = 'hidden'
     }
 }
+*/
+let player = 0
+let comp = 0
+
+let min = 1
+let max = 100
+let dif = max - min
+let rand = Math.random()
+comp = min + Math.trunc(dif * rand)
