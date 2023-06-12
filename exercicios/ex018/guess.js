@@ -5,3 +5,8 @@ function rand() {
     let comp = Math.random()
     let n = min + Math.trunc(dif * comp)
 }
+
+let guess = document.querySelector('section#guess')
+function guess() {
+    let player = Number(prompt('Qual é o seu palpite?'))
+}
