@@ -5,8 +5,11 @@ function guess() {
     let guess = document.querySelector('section#guess')
 
     if (player > comp) {
-        guess.innerHTML = `<p>Você falou ${player}. O meu n´mero é <strong>MENOR!</strong></p>`
+        guess.innerHTML += `<p>Você falou ${player}. O meu número é <strong>MENOR!</strong></p>`
     } else if (player < comp) {
         guess.innerHTML += `<p>Você falou ${player}. Meu número é <strong>MAIOR!</strong></p>`
+    } else {
+        guess.innerHTML += `<p><strong>PARABÉNS!</strong> Você acertou! Eu tinha sorteado o valor ${comp}</p>`
+        let bt = document.getElementById('bt').style.visibility = 'hidden'
     }
 }
