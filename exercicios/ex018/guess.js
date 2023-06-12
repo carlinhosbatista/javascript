@@ -34,5 +34,8 @@ function guess() {
         shot.innerHTML += `<p>Você falou ${player}. O meu número é <strong>MENOR!</strong></p>`
     } else if (player < comp) {
         shot.innerHTML += `<p>Você falou ${player}. O meu número é <strong>MAIOR!</strong></p>`
+    } else {
+        shot.innerHTML += `<p><strong>PARABÉNS!</strong> Você acertou! Eu tinha sorteado o valor ${comp}</p>`
+        let bt = document.getElementById('bt').style.visibility = 'hidden'
     }
 }
