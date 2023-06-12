@@ -1,19 +1,14 @@
-let shot = document.querySelector('section#guess')
-
-function rand() {
-    let min = 1
-    let max = 100
-    let dif = max - min
-    let comp = Math.random()
-    let n = min + Math.trunc(dif * comp)
-
-    
-}
-
+let aut = Math.floor(Math.random() * 100 + 1)
 
 function guess() {
-    let player = Number(prompt('Qual é o seu palpite?'))
-    if(player == comp) {
-        shot.innerHTML += `Parabéns! Você acertou! Eu tinha sorteado o valor ${n}`
+    let num = Number(prompt('Qual é o seu palpite?'))
+    let guess = document.querySelector('section#guess')
+    if (num == aut) {
+       guess.innerHTML += `<p><strong>PARABENS!</strong> Você acertou! Eu tinha sorteado o valor ${aut}</p>`
+       document.querySelector('button#bt').style.visibility = 'hidden'
+    } else if (num > aut) {
+        guess.innerHTML += `<p>Você falou ${num}. Meu número é <strong>MENOR!</strong></p>`
+    } else {
+        guess.innerHTML += `<p>Você falou ${num}. Meu número é <strong>MAIOR!</strong></p>`
     }
 }
