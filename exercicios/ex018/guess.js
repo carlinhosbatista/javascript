@@ -15,11 +15,15 @@ function guess() {
     }
 }
 */
-let player = 0
-let comp = 0
 
-let min = 1
-let max = 100
-let dif = max - min
-let rand = Math.random()
-comp = min + Math.trunc(dif * rand)
+let shot = document.getElementById('guess')
+let comp = 0
+let player = 0
+
+function rand() {
+    let min = 1
+    let max = 100
+    let dif = max - min
+    let rand = Math.random()
+    comp = min + Math.trunc(dif * rand)
+}
