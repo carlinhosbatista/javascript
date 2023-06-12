@@ -32,5 +32,7 @@ function guess() {
     player = Number(prompt('Qual é o seu palpite?'))
     if (player > comp) {
         shot.innerHTML += `<p>Você falou ${player}. O meu número é <strong>MENOR!</strong></p>`
+    } else if (player < comp) {
+        shot.innerHTML += `<p>Você falou ${player}. O meu número é <strong>MAIOR!</strong></p>`
     }
 }
