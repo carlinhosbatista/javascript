@@ -27,3 +27,10 @@ function rand() {
     let rand = Math.random()
     comp = min + Math.trunc(dif * rand)
 }
+
+function guess() {
+    player = Number(prompt('Qual é o seu palpite?'))
+    if (player > comp) {
+        shot.innerHTML += `<p>Você falou ${player}. O meu número é <strong>MENOR!</strong></p>`
+    }
+}
