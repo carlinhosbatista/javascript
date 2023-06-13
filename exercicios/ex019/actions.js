@@ -16,9 +16,10 @@ function calc() {
             result.innerHTML += `<p>${n1} x ${n2} = <strong>${n1 *n2}</strong></p>`
             break
         case 4:
-            result.innerHTML += `<p>${n1} / ${n2} = <strong>${n1/n2}</strong></p>`
+            result.innerHTML += `<p>${n1} / ${n2} = <strong>${(n1/n2).toFixed(2)}</strong></p>`
             break
         default:
+            result.innerHTML += `<p>OPÇÃO INVÁLIDA! Você digitou ${n1} e ${n2}, mas não sei o que fazer com eles.</p>`
             break;
     }
 }
