@@ -1,20 +1,21 @@
 /*
-let comp = Math.floor(Math.random() * 100 + 1)
+let aut = Math.floor(Math.random() * 100 + 1)
 
 function guess() {
-    let player = Number(prompt('Qual é o seu palpite?'))
+    let num = Number(prompt('Qual é o seu palpite?'))
     let guess = document.querySelector('section#guess')
-
-    if (player > comp) {
-        guess.innerHTML += `<p>Você falou ${player}. O meu número é <strong>MENOR!</strong></p>`
-    } else if (player < comp) {
-        guess.innerHTML += `<p>Você falou ${player}. Meu número é <strong>MAIOR!</strong></p>`
+    if (num == aut) {
+       guess.innerHTML += `<p><strong>PARABENS!</strong> Você acertou! Eu tinha sorteado o valor ${aut}</p>`
+       document.querySelector('button#bt').style.visibility = 'hidden'
+    } else if (num > aut) {
+        guess.innerHTML += `<p>Você falou ${num}. Meu número é <strong>MENOR!</strong></p>`
     } else {
-        guess.innerHTML += `<p><strong>PARABÉNS!</strong> Você acertou! Eu tinha sorteado o valor ${comp}</p>`
-        let bt = document.getElementById('bt').style.visibility = 'hidden'
+        guess.innerHTML += `<p>Você falou ${num}. Meu número é <strong>MAIOR!</strong></p>`
     }
 }
 */
+
+// An alternative way...
 
 let shot = document.getElementById('guess')
 let comp = 0
