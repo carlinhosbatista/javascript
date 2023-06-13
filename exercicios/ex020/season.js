@@ -4,12 +4,9 @@ function season() {
     let exit = document.getElementById('exit')
     let season = ''
     switch (month.toUpperCase()) {
-        case 'Janeiro': case 'Fevereiro': case 'Março':
+        case 'JANEIRO': case 'FEVEREIRO': case 'MARÇO':
             season = 'INVERNO'
             break;
-        case 'Abril': case 'MAIO': case 'JUNHO':
-            season = 'PRIMAVERA'
-            break
     
         default:
             break;
