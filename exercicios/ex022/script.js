@@ -4,9 +4,10 @@ function count() {
     
     for(c = 1; c <= 10; c++) {
         if (c%2 == 0) {
-            exit.innerHTML += ` <strong>${c}</strong> \u{1f449}`
+            exit.innerHTML += `<mark><strong> ${c} </strong></mark>\u{1f449}`
         } else {
             exit.innerHTML += ` ${c} \u{1f449}`
         }
     }
+    exit.innerHTML += ` \u{1f3c1}`
 }
