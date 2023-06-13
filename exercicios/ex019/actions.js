@@ -7,9 +7,14 @@ function calc() {
     result.innerHTML = '<h2>Calculando...</h2>'
     switch (op) {
         case 1:
-            result.innerHTML += `<p>${n1} + ${n2} = ${(n1+n2)}</p>`
+            result.innerHTML += `<p>${n1} + ${n2} = <strong>${(n1+n2)}</strong></p>`
             break;
-    
+        case 2:
+            result.innerHTML += `<p>${n1} - ${n2} = <strong>${Math.abs((n1 - n2))}</strong></p>`
+            break
+        case 3:
+            result.innerHTML += `<p>${n1} x ${n2} = <strong>${n1 *n2}</strong></p>`
+            break
         default:
             break;
     }
