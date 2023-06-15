@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcula Troco</title>
     <style>
-        body {
+        h1 {
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5em;
         }
 
         button {
-            font-size: 1em;
-            padding: 30px;
+            font-size: 1.5em;
+            padding: 50px;
         }
     </style>
 </head>
@@ -21,14 +22,13 @@
     <button onclick="calc()">Comprar produto</button>
 
     <script>
-        function calc(){
-            let prod = prompt('Que produto você está comprando?')
-            let val = Number(prompt(`Quanto custa ${prod} que você está comprando?`))
-            let c = val.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-            let din = Number(prompt(`Quanto foi o valor que você deu para pagar ${prod}?`))
-            let pag = din.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-            let troco = din - val
-            alert(`Você comprou ${prod}, que custou ${c}. \n Deu ${pag} em dinheiro e vai receber ${troco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} de troco. \n Volte Sempre!`)
+        function calc() {
+            let item = prompt('Que produto você está comprando?')
+            let price = parseFloat(prompt(`Quanto custa o ${item} que você está comprando?`))
+            let cash = parseFloat(prompt(`Qual foi o valor que você deu para comprar o ${item}?`))
+            val = price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).toString().replace(".", ",")
+            money = cash.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).toString().replace(".", ",")
+            alert(`Você comprou o ${item} que custa ${val}\nDeu ${money} em dinheiro e vai receber ${(cash-price).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).toString().replace(".", ",")} de troco.\nVolte sempre!`)
         }
     </script>
 </body>
