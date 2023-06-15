@@ -5,6 +5,6 @@ function converter() {
     let res = document.querySelector('section#res')
 
     res.innerHTML = `<p><strong>A temperatura ${cel.toString().replace('.', ',')}&#176;C, corresponde a...</strong></p>`
-    res.innerHTML += `<p>${kel.toLocaleString().toString().replace('.', ',')}&#176;K (Kelvin)</p>`
-    res.innerHTML += `${fah.toLocaleString()}°F (Fahrenheit)`
+    res.innerHTML += `<p><strong>${kel.toLocaleString().toString().replace('.', ',')}&#176;K (Kelvin)</strong></p>`
+    res.innerHTML += `<p><strong>${fah.toLocaleString()}°F (Fahrenheit)</strong></p>`
 }
