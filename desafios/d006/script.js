@@ -1,10 +1,10 @@
 function converter() {
-    let celsius = parseFloat(prompt('Digite uma temperatura em °C (Celsius)'))
-    let res = document.getElementById('res')
-    let k = celsius + 273.15 
-    let f = (celsius * 9/5) + 32
+    let cel = prompt('Digite uma temperatura em °C (Celsius)')
+    let kel = parseFloat(cel)+273.15
+    let fah = cel*9/5 + 32
+    let res = document.querySelector('section#res')
 
-    res.innerHTML = `<h2>A temperatura de ${celsius.toLocaleString('pt-BR')}&#176;C, corresponde a...</h2>`
-    res.innerHTML += `<p><strong>${k.toLocaleString('pt-BR')}&#176;K (Kelvin)</strong></p>`
-    res.innerHTML += `<p><strong>${f.toLocaleString('pt-BR')}&#176;F (Fahrenheit)</strong></p>`
+    res.innerHTML = `<p><strong>A temperatura ${cel.toString().replace('.', ',')}&#176;C, corresponde a...</strong></p>`
+    res.innerHTML += `<p>${kel.toLocaleString().toString().replace('.', ',')}&#176;K (Kelvin)</p>`
+    res.innerHTML += `${fah.toLocaleString()}°F (Fahrenheit)`
 }
