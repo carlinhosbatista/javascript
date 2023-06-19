@@ -1,12 +1,11 @@
 function desc() {
-    let prod = prompt('Qual é o produto que você está comprando?')
-    let val = parseFloat(prompt(`Qual é o preço de ${prod}?`)) 
-    let dis = (val*10)/100
-    let tot = val - dis
-    let res = document.querySelector('section#res')
+    let item = prompt('Qual é o produto que está comprando?')
+    let price = parseFloat(prompt(`Qual é o preço de ${item}?`))
+    let desc = 10/100 * price
 
-    res.innerHTML = `<p><strong>Calculando o desconto de 10% para ${prod}.</strong></p>`
-    res.innerHTML += `<p>O preço original era ${val.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.</p>`
-    res.innerHTML += `<p>Você acaba de ganhar ${dis.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} de desconto (-10%).</p>`
-    res.innerHTML += `No fim, você vai pagar ${tot.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} no produto ${prod}.`
+    let res = document.querySelector('p#res')
+    res.innerHTML = `<h2>Calculando desconto de 10% para ${item}</h2>`
+    res.innerHTML += `<p>O preço original era ${price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}.</p>`
+    res.innerHTML += `<p>Você acaba de ganhar ${desc.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} de desconto (-10%).</p>`
+    res.innerHTML += `<p>No fim, você vai pagar ${(price-desc).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} no produto ${item}.</p>`
 }
